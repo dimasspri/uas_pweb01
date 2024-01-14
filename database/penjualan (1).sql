@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Jan 2024 pada 06.08
+-- Waktu pembuatan: 14 Jan 2024 pada 06.16
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.2.0
 
@@ -57,7 +57,9 @@ INSERT INTO `produk` (`id`, `gambar`, `nama_barang`, `harga`, `deskripsi`) VALUE
 (14, '1.jpg', 'TIket WIsata Klenteng', '5000', 'Klenteng Tek Hay Kiong'),
 (15, '2.jpg', 'TIket WIsata Guci', '10000', 'Wisata Guci Tegal'),
 (16, '3.jpg', 'TIket WIsata Curug', '15000', 'Wisata Guci Curug'),
-(17, '4.jpg', 'TIket Taman Slawi', '10000', 'Taman Rakyat Slawi');
+(17, '4.jpg', 'TIket Kota lama', '10000', 'Taman Kota lama tegal'),
+(18, '5.jpg', 'TIket Taman Slawi', '20000', 'Taman Rakyat slawi '),
+(19, '6.jpg', 'Tiket pai', '1000000', 'Tiket Pantai alam indah sangat terjangkau');
 
 -- --------------------------------------------------------
 
@@ -75,7 +77,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`) VALUES
-('dimas', 'dimas');
+('dimas', 'dimas'),
+('admin', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -95,7 +98,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
