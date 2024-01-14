@@ -65,7 +65,7 @@ if (isset($_GET['nama']) && isset($_GET['id_produk']) && isset($_GET['jumlah_bar
             <h2>Terima kasih, <?php echo $nama; ?>!</h2>
             <p>Anda telah berhasil melakukan checkout dengan detail sebagai berikut:</p>
 
-            <img src="img/<?php echo $produk['gambar']; ?>" alt="Gambar Ikan">
+            <img src="img/<?php echo $produk['gambar']; ?>" alt="Gambar tiket">
             <p>Nama Barang: <?php echo $produk['nama_barang']; ?></p>
             <p>Jumlah Barang: <?php echo $jumlah_barang; ?></p>
             <p>Terimakasih atas pembelian Anda. Semoga Anda puas dengan produk kami.</p>
@@ -79,7 +79,9 @@ if (isset($_GET['nama']) && isset($_GET['id_produk']) && isset($_GET['jumlah_bar
         <div class="footer-content">
             <div class="footer-about">
                 <h3>Tentang Kami</h3>
-                <p>Penjualan ikan online, bisa Cod bang >_< </p>
+                <p>Wisata Online adalah destinasi utama untuk merencanakan perjalanan liburan Anda. Dengan layanan
+                    penjualan tiket wisata yang terpercaya dan beragam destinasi menarik, kami menyediakan pengalaman
+                    berwisata yang tak terlupakan bagi setiap pelanggan.</p>
             </div>
             <div class="footer-contact">
                 <h3>Hubungi Kami</h3>

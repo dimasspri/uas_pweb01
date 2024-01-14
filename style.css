@@ -2,11 +2,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #00fbff;
 }
 
 header {
-    background-color: #333;
+    background-color: #009393;
     color: #fff;
     padding: 15px 0;
 }
@@ -38,7 +38,7 @@ header .container {
 }
 
 .nav-links a:hover {
-    color: #ff5733;
+    color: #0035a6;
 }
 
 /* Responsive Styling */
@@ -68,7 +68,7 @@ header .container {
 
 .card {
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 75, 70);
     border-radius: 8px;
     overflow: hidden;
     margin: 20px;
@@ -126,7 +126,7 @@ header .container {
     color: #666;
 }
 footer {
-    background-color: #333;
+    background-color: #009393;
     color: #fff;
     padding: 40px 0;
 }

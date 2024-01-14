@@ -47,10 +47,9 @@ if (isset($_GET['id'])) {
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="#">Produk</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href=".card">Produk</a></li>
+                    <li><a href="footer-contact">Kontak</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,10 +57,16 @@ if (isset($_GET['id'])) {
 
     <div class="container">
         <div class="card">
-            <img src="img/<?php echo $produk['gambar']; ?>" alt="Gambar Ikan">
-            <h1><?php echo $produk['nama_barang']; ?></h1>
-            <h2><?php echo $produk['harga']; ?></h2>
-            <p><?php echo $produk['deskripsi']; ?></p>
+            <img src="img/<?php echo $produk['gambar']; ?>" alt="Gambar tiket">
+            <h1>
+                <?php echo $produk['nama_barang']; ?>
+            </h1>
+            <h2>
+                <?php echo $produk['harga']; ?>
+            </h2>
+            <p>
+                <?php echo $produk['deskripsi']; ?>
+            </p>
             <br><br>
             <!-- Formulir untuk informasi konsumen -->
             <form action="proses_checkout.php" method="post">
@@ -71,7 +76,7 @@ if (isset($_GET['id'])) {
                 <label for="alamat">Alamat:</label>
                 <textarea id="alamat" name="alamat" required></textarea>
 
-                <label for="jumlah_barang">Jumlah Barang:</label>
+                <label for="jumlah_barang">Jumlah Tiket:</label>
                 <input type="number" id="jumlah_barang" name="jumlah_barang" required>
 
                 <input type="hidden" name="id" value="<?php echo $produk['id']; ?>">
@@ -87,7 +92,9 @@ if (isset($_GET['id'])) {
         <div class="footer-content">
             <div class="footer-about">
                 <h3>Tentang Kami</h3>
-                <p>Penjualan ikan online, bisa Cod bang >_< </p>
+                <p>Wisata Online adalah destinasi utama untuk merencanakan perjalanan liburan Anda. Dengan layanan
+                    penjualan tiket wisata yang terpercaya dan beragam destinasi menarik, kami menyediakan pengalaman
+                    berwisata yang tak terlupakan bagi setiap pelanggan.</p>
             </div>
             <div class="footer-contact">
                 <h3>Hubungi Kami</h3>

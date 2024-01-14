@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result_insert) {
         // Redirect ke halaman terimakasih jika insert berhasil
-        header("Location: terimakasih.php?nama=$nama&id_produk=$id_produk&jumlah_barang=$jumlah_barang");
+        header("Location: end.php?nama=$nama&id_produk=$id_produk&jumlah_barang=$jumlah_barang");
         exit();
     } else {
         die("Query error: " . mysqli_error($koneksi));

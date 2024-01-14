@@ -31,20 +31,19 @@ if (!$result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Penjualan Ikan</title>
+    <title>Penjualan Tiket Wisata</title>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
+    <nav class="navbar">
             <div class="container">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produk</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href=".card">Produk</a></li>
+                    <li><a href="footer-contact">Kontak</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,7 +56,7 @@ if (!$result) {
         while ($row = mysqli_fetch_assoc($result)) {
         ?>
             <div class="card">
-                <img src="img/<?php echo $row['gambar']; ?>" alt="Gambar Ikan">
+                <img src="img/<?php echo $row['gambar']; ?>" alt="Gambar tiket">
                 <h1><?php echo $row['nama_barang']; ?></h1>
                 <h2>Rp. <?php echo $row['harga']; ?></h2>
                 <p><?php echo $row['deskripsi']; ?></p>
@@ -75,12 +74,14 @@ if (!$result) {
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>Tentang Kami</h3>
-                    <p>Penjualan ikan online, bisa Cod bang >_< </p>
+                    <p>Wisata Online adalah destinasi utama untuk merencanakan perjalanan liburan Anda. Dengan layanan
+                    penjualan tiket wisata yang terpercaya dan beragam destinasi menarik, kami menyediakan pengalaman
+                    berwisata yang tak terlupakan bagi setiap pelanggan.</p>
                 </div>
                 <div class="footer-contact">
                     <h3>Hubungi Kami</h3>
-                    <p>Email: fiqri@gmail.com</p>
-                    <p>Telepon: 0838-9323-6228</p>
+                    <p>Email: dimas.supriyono11@gmail.com</p>
+                    <p>Telepon: 0823-1470-2942</p>
                 </div>
             </div>
         </div>
